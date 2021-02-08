@@ -22,7 +22,7 @@ public class RegisterAction extends Action{
 		Connection con = null;
 		try {
 		     Class.forName("org.hsqldb.jdbc.JDBCDriver" );
-		     con=DriverManager.getConnection("jdbc:hsqldb:http://localhost/xdb", "SA", "");
+		     //con=DriverManager.getConnection("jdbc:hsqldb:http://localhost/xdb", "SA", "");
 		 } catch (Exception e) {
 		     System.err.println("ERROR: failed to load HSQLDB JDBC driver.");
 		     e.printStackTrace();
