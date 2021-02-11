@@ -12,9 +12,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Register User</title>
     </head>
     <body>
-        <h1>Login Success. Welcome <bean:write name="LoginForm" property="userName"></bean:write></h1>
+        <h1>Registration Success. Welcome <bean:write name="RegisterUser" property="fname"></bean:write></h1>
     </body>
 </html>

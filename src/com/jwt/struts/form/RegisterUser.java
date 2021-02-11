@@ -1,7 +1,5 @@
 package com.jwt.struts.form;
 
-import java.util.Date;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts.action.ActionErrors;
@@ -14,13 +12,26 @@ public class RegisterUser extends org.apache.struts.action.ActionForm{
 	private String fname;
 	private String lname;
 	private int age;
-	private String dob;
+	private String dob1;
 	private String role;
 	
+/*    public static CharSequence sysDateMethod() 
+    {
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/YYYY");
+        
+        Date dob = new Date();
+        String SysDate = dateFormat.format(dob);
+        
+        return SysDate;
+
+    }
+	*/
 	public ActionErrors validate(ActionMapping mapping,HttpServletRequest request) {
+		System.out.println("RegisterUser");
 		ActionErrors errors=new ActionErrors();
 		if ((empid==0)||empid==' ') {
 			errors.add("empid",new ActionMessage("error.empid.required"));
+			
 		}
 		if (fname==null || fname.length()<1) {
 			errors.add("fname", new ActionMessage("error.fname.required"));
@@ -31,7 +42,7 @@ public class RegisterUser extends org.apache.struts.action.ActionForm{
 		if ((age==0)||age==' ') {
 			errors.add("age", new ActionMessage("error.age.required"));
 		}
-		if ((dob==null || dob.length()<1)) {
+		if ((dob1==null || dob1.length()<1)) {
 			errors.add("dob", new ActionMessage("error.dob.required"));
 		}
 		if (role==null||role.length()<1) {
@@ -63,11 +74,13 @@ public class RegisterUser extends org.apache.struts.action.ActionForm{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getDob() {
-		return dob;
+	public String getDob1() {
+		
+		return dob1;
 	}
-	public void setDob(String dob) {
-		this.dob = dob;
+	public void setDob1(String dob1) {
+		this.dob1 = dob1;
+		
 	}
 	public String getRole() {
 		return role;
