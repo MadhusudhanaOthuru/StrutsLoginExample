@@ -16,7 +16,7 @@
             First Name  : <html:text name="RegisterUser" property="fname" /> <br>
             Last Name  : <html:text name="RegisterUser" property="lname" /> <br>
             Age  : <html:text name="RegisterUser" property="age" /> <br>
-            Date Of Birth  : <html:text name="RegisterUser" property="dob" /> <br>
+            Date Of Birth  : <html:text name="RegisterUser" property="dob1" /> <br>
             Role  : <html:text name="RegisterUser" property="role" /> <br>
             <html:submit value="Register" />
         </html:form>
