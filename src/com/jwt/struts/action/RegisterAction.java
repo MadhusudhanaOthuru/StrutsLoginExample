@@ -21,19 +21,27 @@ public class RegisterAction extends Action{
     private final static String FAILURE = "failure";
     
     public ActionForward execute(ActionMapping mapping,ActionForm form,HttpServletRequest request,HttpServletResponse response) throws Exception{
+    	
+    	
 		RegisterUser registeruser=(RegisterUser)form;
-		Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(registeruser.getDob1());
-		System.out.println(date1);
+		
+		
 		Connection con = null;
 		Statement stmt = null;
-		int result=0;
+		//int result=0;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@10.140.46.56:1521:TRACKER", "TRAINING", "training2020");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@10.140.46.56:1521:TRACKER", "TRAINING", "training2021");
 	         stmt = con.createStatement();
-	         System.out.println(con);
-	         result=stmt.executeUpdate("INSERT INTO register_user (EMP_ID, FIRST_NAME, LAST_NAME, AGE, DOB, ROLE) VALUES ("+registeruser.getEmpid()+", '"+registeruser.getFname()+"', '"+registeruser.getLname()+"', "+registeruser.getAge()+", '"+date1+"', '"+registeruser.getRole()+"'");
-	         System.out.println("SUCCESS Inserted a row "+result); 
+	         System.out.println("Employee ID: "+registeruser.getEmpid());
+	         System.out.println("First Name: "+registeruser.getFname());
+	         System.out.println("Last Name: "+registeruser.getLname());
+	         System.out.println("Age: "+registeruser.getAge());
+	         System.out.println("Date Of Birth: "+registeruser.getDob1());
+	         System.out.println("Role: "+registeruser.getRole());
+	         String sqlinsert="INSERT INTO register_user VALUES ("+registeruser.getEmpid()+", '"+registeruser.getFname()+"', '"+registeruser.getLname()+"', "+registeruser.getAge()+", TO_DATE('"+registeruser.getDob1()+"', 'DD/MM/YYYY'), '"+registeruser.getRole()+"')";
+	         stmt.executeUpdate(sqlinsert);
+	         System.out.println("SUCCESSFULLY Inserted a row "); 
 	            return mapping.findForward(SUCCESS);
 	         
 		 } catch (Exception e) {
