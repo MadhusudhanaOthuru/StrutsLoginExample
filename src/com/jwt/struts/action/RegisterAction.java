@@ -24,11 +24,11 @@ public class RegisterAction extends Action{
     	
     	
 		RegisterUser registeruser=(RegisterUser)form;
-		
+	
 		
 		Connection con = null;
 		Statement stmt = null;
-		//int result=0;
+
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con=DriverManager.getConnection("jdbc:oracle:thin:@10.140.46.56:1521:TRACKER", "TRAINING", "training2021");
@@ -54,13 +54,5 @@ public class RegisterAction extends Action{
 				
 			}
 
-		
-/*    	if(registeruser.getEmpid()!=0 || registeruser.getEmpid()!=' ' || registeruser.getFname().equalsIgnoreCase(registeruser.getFname())|| registeruser.getLname().equalsIgnoreCase(registeruser.getLname())||registeruser.getAge()!=0 ||registeruser.getAge()!=' '||registeruser.getDob()!=null||registeruser.getRole().equalsIgnoreCase(registeruser.getRole()) ) {
-    		System.out.println("SUCCESS: Employee ID="+registeruser.getEmpid()+"    First Name: ="+registeruser.getFname()+"   Last Name: ="+registeruser.getLname()+"   Age: ="+registeruser.getAge()+"   Date Of Birth: ="+registeruser.getDob()+"   Role: ="+registeruser.getRole()); 
-            return mapping.findForward(SUCCESS);
-    	}else {
-        	System.out.println("FAILURE: Employee ID="+registeruser.getEmpid()+"    First Name: ="+registeruser.getFname()+"   Last Name: ="+registeruser.getLname()+"   Age: ="+registeruser.getAge()+"   Date Of Birth: ="+registeruser.getDob()+"   Role: ="+registeruser.getRole()); 
-            return mapping.findForward(FAILURE);
-        }*/
     }
 }
