@@ -15,17 +15,6 @@ public class RegisterUser extends org.apache.struts.action.ActionForm{
 	private String dob1;
 	private String role;
 	
-/*    public static CharSequence sysDateMethod() 
-    {
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/YYYY");
-        
-        Date dob = new Date();
-        String SysDate = dateFormat.format(dob);
-        
-        return SysDate;
-
-    }
-	*/
 	public ActionErrors validate(ActionMapping mapping,HttpServletRequest request) {
 		System.out.println("RegisterUser");
 		ActionErrors errors=new ActionErrors();
