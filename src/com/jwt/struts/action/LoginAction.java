@@ -3,6 +3,7 @@ package com.jwt.struts.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
@@ -14,13 +15,16 @@ public class LoginAction extends Action {
 
     private final static String SUCCESS = "success";
     private final static String FAILURE = "failure";
-    //static Logger logger = Logger.getLogger(LoginAction.class);
+    static Logger logger = Logger.getLogger(LoginAction.class);
     public ActionForward execute(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
         LoginForm loginForm = (LoginForm) form;
-        
+        logger.info("Info Logger Successful");
+        //logger.debug("Debug Logger Successful");
+        //logger.error("Error Logger Successful");
         if (loginForm.getUserName().equals(loginForm.getPassword())) {
+        	       	
         	System.out.println("SUCCESS: UN="+loginForm.getUserName()+"    Password: ="+loginForm.getPassword()); 
             return mapping.findForward(SUCCESS);
            
