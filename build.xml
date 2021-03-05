@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="StrutsLoginExample">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Apache Tomcat v6.0 [Apache Tomcat v6.0].libraryclasspath">
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/annotations-api.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/catalina-ant.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/catalina-ha.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/catalina-tribes.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/catalina.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/ecj-4.2.2.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/el-api.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/jasper-el.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/jasper.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/jsp-api.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/servlet-api.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../../apache-ant-1.7.1/lib/lib/lib/tomcat-i18n-ja.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/antlr.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-beanutils.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-digester.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-fileupload-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-logging.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-validator.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-1.2.8.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ojdbc6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/struts.jar"/>
+      	        
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="StrutsLoginExample.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Apache Tomcat v6.0 [Apache Tomcat v6.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-1.2.8.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ojdbc6.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+
+    	<javac classpathref="StrutsLoginExample.classpath" includeantruntime="false" srcdir="C:/BCSM6/Git Projects/StrutsLoginExample/src" destdir="build/classes" debug="${compile.debug}" fork="yes" optimize="on" memoryinitialsize="256m" memorymaximumsize="256m" failonerror="true">
+    	            <include name="**/*.java" />
+    	            <exclude name="**/CVS/**" />
+    	        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="CreateTable">
+        <java classname="com.jwt.struts.action.CreateTable" failonerror="true" fork="yes">
+            <classpath refid="StrutsLoginExample.classpath"/>
+        </java>
+    </target>
+   <target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+              	    <mkdir dir="WebContent/WEB-INF/classes"/>
+              	     
+              	    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+              	            <fileset dir="build/classes">
+              	            <include name="**/*.class"/>
+              	            </fileset>
+              	    </copy>
+              	     
+              	    <war destfile="StrutsLoginExample.war"
+              	        basedir="WebContent"
+              	        needxmlfile="false">
+              	    </war>
+  </target>	
+</project>
