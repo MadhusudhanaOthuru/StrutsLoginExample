@@ -15,6 +15,8 @@
         <title>Register User</title>
     </head>
     <body>
-        <h1>Registration Success. Welcome <bean:write name="RegisterUser" property="fname"></bean:write></h1>
+    <div style="color:blue">
+        <h1>Registration Successful. Welcome <bean:write name="RegisterUser" property="fname"></bean:write></h1>
+        </div>
     </body>
-</html>
+   </html>
