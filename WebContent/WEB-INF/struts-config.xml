@@ -18,8 +18,8 @@
 	<action-mappings>
 		<action input="/login.jsp" name="LoginForm" path="/Login"
 			scope="session" type="com.jwt.struts.action.LoginAction">
-			<forward name="success" path="/success.jsp" />
 			<forward name="failure" path="/failure.jsp" />
+			<forward name="retrieve" path="/retrieve.jsp" />
 		</action>
 		<action input="/registeruserpage.jsp" name="RegisterUser" path="/Register"
 			scope="session" type="com.jwt.struts.action.RegisterAction">
