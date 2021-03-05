@@ -12,7 +12,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionForward;
 
-import com.jwt.structs.dao.DaoImpl;
+import com.jwt.struts.dao.DaoImpl;
 import com.jwt.struts.form.LoginForm;
 import com.jwt.struts.form.RegisterUser;
 
