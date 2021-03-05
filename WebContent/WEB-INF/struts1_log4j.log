@@ -82,4 +82,16 @@
   2021-03-05 14:07:10 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
   2021-03-05 14:07:10 INFO  LoginAction:? - After Set Attribute in request
   2021-03-05 14:07:10 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 15:36:52 ERROR LoginAction:? - FAILURE: UN=mncb    Password: =mncc
+  2021-03-05 15:46:03 INFO  DaoImpl:? - SUCCESSFULLY Inserted a row 
+  2021-03-05 15:46:27 INFO  LoginAction:? - SUCCESS 23: UN=dgf    Password: =dgf
+  2021-03-05 15:46:27 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 15:46:27 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 15:46:27 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 15:46:28 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@7ecbdb58
+  2021-03-05 15:46:28 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@21b1ade4
+  2021-03-05 15:46:28 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 15:46:29 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 15:46:29 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 15:46:29 INFO  LoginAction:? - Before findForward  Attribute in request
   
