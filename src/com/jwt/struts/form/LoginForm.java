@@ -11,9 +11,8 @@ public class LoginForm extends org.apache.struts.action.ActionForm {
 	private String userName;
 
 	private String password;
-	
-	public ActionErrors validate(ActionMapping mapping,
-			HttpServletRequest request) {
+
+	public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
 		ActionErrors errors = new ActionErrors();
 		if (userName == null || userName.length() < 1) {
 			errors.add("userName", new ActionMessage("error.userName.required"));
