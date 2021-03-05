@@ -1,0 +1,85 @@
+2021-03-05 12:48:42 INFO  LoginAction:? - SUCCESS 17: UN=mncb    Password: =mncb
+  2021-03-05 12:48:42 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 12:48:42 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 12:48:42 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 12:48:46 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@2dfa26fc
+  2021-03-05 12:48:46 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@c9517d7
+  2021-03-05 12:48:46 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 12:48:46 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 12:48:46 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 12:48:46 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 12:55:52 INFO  LoginAction:? - SUCCESS 18: UN=mncb    Password: =mncb
+  2021-03-05 12:55:52 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 12:55:52 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 12:55:52 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 12:55:56 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@637b4a87
+  2021-03-05 12:55:57 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@2898bbcc
+  2021-03-05 12:55:57 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 12:55:57 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 12:55:57 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 12:55:57 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 12:58:37 INFO  LoginAction:? - SUCCESS 19: UN=mncb    Password: =mncb
+  2021-03-05 12:58:37 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 12:58:37 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 12:58:37 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 12:58:41 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@2dfa26fc
+  2021-03-05 12:58:41 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@c9517d7
+  2021-03-05 12:58:41 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 12:58:41 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 12:58:41 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 12:58:41 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 13:03:49 INFO  LoginAction:? - SUCCESS 19: UN=mncb    Password: =mncb
+  2021-03-05 13:03:49 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 13:03:49 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 13:03:49 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 13:03:53 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@633dc557
+  2021-03-05 13:03:53 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@3857f77b
+  2021-03-05 13:03:53 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 13:03:53 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 13:03:53 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 13:03:53 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 13:07:23 INFO  LoginAction:? - SUCCESS 20: UN=mncb    Password: =mncb
+  2021-03-05 13:07:23 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 13:07:23 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 13:07:23 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 13:07:53 INFO  LoginAction:? - SUCCESS 20: UN=mncb    Password: =mncb
+  2021-03-05 13:07:53 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 13:07:53 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 13:07:53 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 13:07:57 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@39fa549b
+  2021-03-05 13:07:58 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@a051bd7
+  2021-03-05 13:07:58 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 13:07:58 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 13:07:58 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 13:07:58 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 13:53:32 INFO  LoginAction:? - SUCCESS 21: UN=mncb    Password: =mncb
+  2021-03-05 13:53:32 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 13:53:32 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 13:53:32 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 13:53:36 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@5ba5e9d7
+  2021-03-05 13:53:36 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@6365163
+  2021-03-05 13:53:36 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 13:53:37 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 13:53:37 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 13:53:37 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 14:01:26 INFO  LoginAction:? - SUCCESS 22: UN=mncb    Password: =mncb
+  2021-03-05 14:01:26 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 14:01:26 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 14:01:26 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 14:01:30 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@5873ee25
+  2021-03-05 14:01:31 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@707d039e
+  2021-03-05 14:01:31 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 14:01:31 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 14:01:31 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 14:01:31 INFO  LoginAction:? - Before findForward  Attribute in request
+  2021-03-05 14:07:06 INFO  LoginAction:? - SUCCESS 23: UN=mncb    Password: =mncb
+  2021-03-05 14:07:06 INFO  LoginAction:? - Before Set Attribute in request
+  2021-03-05 14:07:06 INFO  DaoImpl:? - Entered into try block 
+  2021-03-05 14:07:06 INFO  DaoImpl:? - After Class for Name 
+  2021-03-05 14:07:10 INFO  DaoImpl:? - Got Connectionoracle.jdbc.driver.T4CConnection@5e91d43b
+  2021-03-05 14:07:10 INFO  DaoImpl:? - After Result Set simply rsoracle.jdbc.driver.OracleResultSetImpl@2986775e
+  2021-03-05 14:07:10 INFO  DaoImpl:? - After Result Set0
+  2021-03-05 14:07:10 INFO  DaoImpl:? - SUCCESSFULLY retrieved the rows
+  2021-03-05 14:07:10 INFO  LoginAction:? - After Set Attribute in request
+  2021-03-05 14:07:10 INFO  LoginAction:? - Before findForward  Attribute in request
+  
